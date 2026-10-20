@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Task Tracker</h1>
+    <p>Manage your tasks using a FastAPI backend.</p>
+
+    <form id="task-form">
+      <label for="task-input">New task</label>
+      <div class="form-row">
+        <input id="task-input" maxlength="100"
+               placeholder="Enter a task" required>
+        <button type="submit">Add task</button>
+      </div>
+    </form>
+
+    <p id="message" role="status"></p>
+    <ul id="task-list"></ul>
+  </main>
+</body>
+</html>
