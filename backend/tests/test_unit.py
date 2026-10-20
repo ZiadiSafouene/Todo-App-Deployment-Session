@@ -7,11 +7,11 @@ from app.tasks import create_task, complete_task
 def test_create_task_assigns_id_and_defaults():
     tasks = [{"id": 1, "title": "Existing", "completed": False}]
 
-    result = create_task(tasks, "Learn pytest")
+    result = create_task(tasks, "Learn pytest and ci cd")
 
     assert result == {
         "id": 2,
-        "title": "Learn pytest",
+        "title": "Learn pytest and ci cd",
         "completed": False,
     }
     assert len(tasks) == 2
