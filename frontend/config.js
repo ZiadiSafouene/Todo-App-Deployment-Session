@@ -1,1 +1,1 @@
-window.API_BASE = "https://task-tracker-jsfa.onrender.com/";
+window.API_BASE = "https://task-tracker-jsfa.onrender.com";
